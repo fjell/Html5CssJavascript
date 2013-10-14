@@ -4,10 +4,29 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>HcJ - The ultimate guide to Cert</title>
+    <link rel="stylesheet" type="text/css" href="../Styles/Styles.css" />
 </head>
 <body>
-        <asp:ContentPlaceHolder ID="Main" runat="server">
-        </asp:ContentPlaceHolder>
+    <div class="PageArea">
+        <header></header>
+        <nav>
+        <menu>
+            <a href="../Default.aspx"><div>Start</div></a>
+            <a href="../Pages/DocumentStructure.aspx"><div>Document Structure and Objects</div></a>
+            <a href="../Pages/ProgramFlow.aspx"><div>Program Flow</div></a>
+            <a href="../Pages/SecureData.aspx"><div>Access/Secure Data</div></a>
+            <a href="../Pages/Css3.aspx"><div>CSS3</div></a>
+        </menu>
+            </nav>
+        <article class="MainContentArea">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </article>
+        <aside>
+        </aside>
+        <footer>
+        </footer>
+    </div>
 </body>
 </html>

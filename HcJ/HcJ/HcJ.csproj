@@ -59,6 +59,10 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="Dependencies\jquery-2.0.3.min.js" />
+    <Content Include="Pages\Css3.aspx" />
+    <Content Include="Pages\DocumentStructure.aspx" />
+    <Content Include="Pages\ProgramFlow.aspx" />
+    <Content Include="Pages\SecureData.aspx" />
     <Content Include="Scripts\MainScript.js" />
     <Content Include="Styles\Styles.css" />
     <Content Include="Web.config" />
@@ -68,9 +72,6 @@
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
     <Compile Include="MasterPages\Main.Master.cs">
       <DependentUpon>Main.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -78,10 +79,40 @@
     <Compile Include="MasterPages\Main.Master.designer.cs">
       <DependentUpon>Main.Master</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Css3.aspx.cs">
+      <DependentUpon>Css3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Css3.aspx.designer.cs">
+      <DependentUpon>Css3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DocumentStructure.aspx.cs">
+      <DependentUpon>DocumentStructure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\DocumentStructure.aspx.designer.cs">
+      <DependentUpon>DocumentStructure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ProgramFlow.aspx.cs">
+      <DependentUpon>ProgramFlow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ProgramFlow.aspx.designer.cs">
+      <DependentUpon>ProgramFlow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SecureData.aspx.cs">
+      <DependentUpon>SecureData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SecureData.aspx.designer.cs">
+      <DependentUpon>SecureData.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="MasterPages\Main.Master" />
+    <Content Include="Dependencies\fonts\Potion.ttf" />
+    <Content Include="Dependencies\fonts\Potion.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -89,9 +120,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Pages\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
